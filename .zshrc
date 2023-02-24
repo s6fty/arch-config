@@ -45,7 +45,7 @@ zstyle ':omz:update' mode disabled  # disable automatic updates
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -107,11 +107,13 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nano ~/.zshrc"
+alias zshconf="nano ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias -g sudo='doas'
 alias i3conf="nano ~/.config/i3/config"
 alias neofetchconf="nano .config/neofetch/config.conf"
+alias sakuraconf="nano .config/sakura/sakura.conf"
+alias removeunused="sudo pacman -Rsn $(pacman -Qdtq)"
 
 export PATH=$PATH:~/.spoof-dpi/bin
 
