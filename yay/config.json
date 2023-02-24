@@ -10,8 +10,8 @@
 	"pacmanconf": "/etc/pacman.conf",
 	"redownload": "no",
 	"rebuild": "no",
-	"answerclean": "",
-	"answerdiff": "",
+	"answerclean": "None",
+	"answerdiff": "None",
 	"answeredit": "",
 	"answerupgrade": "",
 	"gitbin": "git",
@@ -21,7 +21,7 @@
 	"sortby": "votes",
 	"searchby": "name-desc",
 	"gitflags": "",
-	"removemake": "ask",
+	"removemake": "yes",
 	"sudobin": "sudo",
 	"sudoflags": "",
 	"requestsplitn": 150,
@@ -38,10 +38,10 @@
 	"cleanmenu": true,
 	"diffmenu": true,
 	"editmenu": false,
-	"combinedupgrade": false,
+	"combinedupgrade": true,
 	"useask": false,
-	"batchinstall": false,
+	"batchinstall": true,
 	"singlelineresults": false,
 	"separatesources": true,
-	"version": "11.3.1"
+	"version": "11.3.2"
 }
