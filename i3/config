@@ -448,12 +448,13 @@ for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [window_role="About"] floating enable
+for_window [class="Sakura" instance="sakura"] flotaing enable
 
 # set border of floating window
-for_window [class="urxvt"] border pixel 1
+for_window [class="sakura"] border pixel 1
 
 # set size of floating window
-#for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
+for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
 #for_window [class=".*"] resize set 640 480 #to change size of all floating windows 
 
 # set position of floating window
@@ -493,7 +494,7 @@ bar {
 		font pango: SF Display Pro 10
 		status_command i3status
 	    	position bottom
-#	    	i3bar_command i3bar --transparency
+	    	i3bar_command i3bar --transparency
 # it could be that you have no primary display set: set one (xrandr --output <output> --primary)
 # reference: https://i3wm.org/docs/userguide.html#_tray_output
 		    #tray_output primary
@@ -506,7 +507,7 @@ strip_workspace_numbers yes
 ##strip_workspace_name no
 
 		    colors {
-		    separator          $white
+		    separator          $gray
 		    background         $black
 		    statusline         $white
 #                          		border 		        bg		txt		indicator
@@ -584,6 +585,6 @@ bindsym Shift+Print exec --no-startup-id maim --select | xclip -selection clipbo
 ###########
 # Autorun #
 ###########
-exec --no-startup-id xinput --set-prop 8 293 -.5
+exec --no-startup-id xinput --set-prop 8 293 -.45
 exec --no-startup-id bash -ic "sh bootstrap.sh"
 #exec_always "setxkbmap -model pc104 -layout us,tr -variant ,, -option grp:alt_\_toggle"
